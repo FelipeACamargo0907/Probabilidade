@@ -1,0 +1,5 @@
+.bg-blue {
+    background-color: black;
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+}
