@@ -1,0 +1,34 @@
+{
+  "Historico": [
+    {
+      "id": 1,
+      "favoraveis": 1,
+      "possiveis": 2,
+      "resultado": "0.5"
+    },
+    {
+      "id": 2,
+      "favoraveis": 3,
+      "possiveis": 4,
+      "resultado": "0.75"
+    },
+    {
+      "id": "",
+      "favoraveis": "",
+      "possiveis": "",
+      "resultado": ""
+    },
+    {
+      "id": "",
+      "favoraveis": "5",
+      "possiveis": "50",
+      "resultado": ""
+    },
+    {
+      "id": "",
+      "favoraveis": "2",
+      "possiveis": "2",
+      "resultado": "1.00"
+    }
+  ]
+}
