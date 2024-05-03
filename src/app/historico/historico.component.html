@@ -1,4 +1,4 @@
-<div class="container text-center col-7">
+<div class="container text-center col-6">
     <div class="row justify-content-center text-primary-emphasis">
         <form [formGroup]="formGroupHistorico">
             <div class="text-center mt-5">
@@ -10,9 +10,7 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Favoráveis</th>
-                            <th scope="col"></th>
                             <th scope="col">Possíveis</th>
-                            <th scope="col"></th>
                             <th scope="col">Resultado</th>
                         </tr>
                     </thead>
@@ -21,9 +19,7 @@
                         <tr *ngFor="let historico of Historico">
                             <th scope="row">{{historico.id}}</th>
                             <td>{{historico.favoraveis}}</td>
-                            <td>/</td>
                             <td>{{historico.possiveis}}</td>
-                            <td>=</td>
                             <td>{{historico.resultado}}</td>
                         </tr>
                     </tbody>
