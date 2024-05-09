@@ -17,8 +17,9 @@ export class HistoricoComponent {
     private formBuilder : FormBuilder) {
       this.formGroupHistorico = this.formBuilder.group({
         id: [''],
-        favoraveis: [''],
-        possiveis: [''],
+        tipo: [''],
+        valor1: [''],
+        valor2: [''],
         resultado: ['']
       })
      }

@@ -21,17 +21,22 @@ export class CalculadoraComponent {
     private formBuilder: FormBuilder) {
     this.formGroupHistorico = this.formBuilder.group({
       id: [''],
-      favoraveis: [''],
-      possiveis: [''],
+      tipo: ['Simples'],
+      valor1: [''],
+      valor2: [''],
       resultado: ['']
     })
   }
 
 
   CalcularProbabilidade() {
-    this.resultadoTemp = (this.favoraveis / this.possiveis);
+    if(this.possiveis != 0 && this.favoraveis != 0 && this.possiveis >= this.favoraveis && this.favoraveis != null && this.possiveis != null){
+    this.resultadoTemp = (this.favoraveis / this.possiveis) * 100;
 
-    this.resultado = this.resultadoTemp.toFixed(2);
+    this.resultado = this.resultadoTemp.toFixed(2) + "%"
+    }else{
+      this.resultado = "\n"+"O valor de favoráveis deve ser menor ou igual que possíveis e não pode ser zero!";
+    }
   }
 
   save() {

@@ -1,6 +1,7 @@
 export interface Historico {
     id: number;
-    favoraveis: number;
-    possiveis: number;
+    tipo: string;
+    valor1: number;
+    valor2: number;
     resultado: string;
 }

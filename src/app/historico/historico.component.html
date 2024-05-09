@@ -3,14 +3,15 @@
         <form [formGroup]="formGroupHistorico">
             <div class="text-center mt-5">
                 <div class="mb-5">
-                    <h2> Histórico de Resultados</h2>
+                    <h1> Histórico de Resultados</h1>
                 </div>
                 <table class="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Favoráveis</th>
-                            <th scope="col">Possíveis</th>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Valor 1</th>
+                            <th scope="col">Valor 2</th>
                             <th scope="col">Resultado</th>
                         </tr>
                     </thead>
@@ -18,8 +19,9 @@
                     <tbody>
                         <tr *ngFor="let historico of Historico">
                             <th scope="row">{{historico.id}}</th>
-                            <td>{{historico.favoraveis}}</td>
-                            <td>{{historico.possiveis}}</td>
+                            <th scope="row">{{historico.tipo}}</th>
+                            <td>{{historico.valor1}}</td>
+                            <td>{{historico.valor2}}</td>
                             <td>{{historico.resultado}}</td>
                         </tr>
                     </tbody>

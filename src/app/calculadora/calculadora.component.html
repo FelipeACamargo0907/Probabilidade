@@ -1,17 +1,17 @@
 <form [formGroup]="formGroupHistorico">
     <div class="row justify-content-center text-primary-emphasis">
-        <div class="col-4">
-
-            <div class="mt-5 text-center">
-                <h1>Calculadora de Probabilidades</h1><br>
-            </div>
+        <div class="mt-5 text-center">
+            <h1>Calculadora de Probabilidade Simples</h1><br>
+        </div>
+        
+        <div class="col-3">
 
             <div class="mt-3 mb-2">
                 <label>Resultados Favoráveis:</label>
             </div>
 
             <div class="input-group mb-4">
-                <input type="text" [(ngModel)]="favoraveis" formControlName="favoraveis" class="form-control"
+                <input type="number" [(ngModel)]="favoraveis" formControlName="valor1" class="form-control"
                     placeholder="Digite o Valor:" aria-label="Digite o Valor:" aria-describedby="button-addon2">
             </div>
 
@@ -20,18 +20,18 @@
             </div>
 
             <div class="input-group mb-4">
-                <input type="text" [(ngModel)]="possiveis" formControlName="possiveis" class="form-control"
+                <input type="number" [(ngModel)]="possiveis" formControlName="valor2" class="form-control"
                     placeholder="Digite o Valor:" aria-label="Digite o Valor:" aria-describedby="button-addon2">
             </div>
 
             <div class="mb-4 d-grid gap-2 col-2 mx-auto">
                 <button class="btn btn-secondary " (click)="CalcularProbabilidade()" (click)="save()"
-                    type="button">Calcular</button>
+                    type="button"><b>Calcular</b></button>
             </div>
 
             <div
                 class="p-3 text-secondary-emphasis -emphasis bg-secondary-subtle border border-secondary-emphasis rounded-3">
-                <b>Resultado:</b><br>
+                <b>Resultado:</b>
                 <span class="text-align" style="white-space: pre-line;" formControlName="resultado">{{resultado}}</span>
             </div>
         </div>

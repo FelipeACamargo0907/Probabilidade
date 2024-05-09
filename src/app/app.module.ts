@@ -9,13 +9,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { HistoricoComponent } from './historico/historico.component';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { CondicionalComponent } from './condicional/condicional.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HistoricoComponent,
-    CalculadoraComponent
+    CalculadoraComponent,
+    CondicionalComponent
   ],
   imports: [
     BrowserModule,
